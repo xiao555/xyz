@@ -1,0 +1,23 @@
+
+{
+    "compilerOptions": {
+      "rootDir": "./packages",
+      "module": "commonjs",
+      "target": "ESNext",
+      "lib": ["ESNext"],
+      "experimentalDecorators": true,
+      "declaration": true,
+      "sourceMap": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "downlevelIteration": true,
+      "composite": true,
+      "baseUrl": ".",
+      "paths": {
+        "@xyz/*": ["packages/*/src/index.ts"]
+      }
+    }
+  }
+  

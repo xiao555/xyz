@@ -1,0 +1,29 @@
+{
+  "name": "@xyz/http",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "zhangruiwu <zhangruiwu32@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/xyz-http.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "yarn run clean && tsc -b tsconfig.build.json",
+    "clean": "rm -rf ./lib",
+    "test": "ts-node -r tsconfig-paths/register test/index.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@xyz/hooks": "*"
+  }
+}

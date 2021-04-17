@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "create": "lerna create",
+    "bootstrap": "npm run clean && lerna bootstrap",
+    "build": "lerna exec -- yarn build",
+    "clean": "rm -rf packages/*/dist && rm -rf packages/*/node_modules && rm -rf packages/*/yarn.lock"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "tsconfig-paths": "^3.9.0"
+  }
+}
